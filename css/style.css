@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+}
+
+/********** container ***********/
+#container {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px -3px 19px 10px rgb(136 130 130 / 50%);
+}
+
+/********** middle 置中 ***********/
+.middle {
+  margin: auto;
+  text-align: center;
+}
+
+/*********** header ***********/
+#header {
+  width: 100%;
+  height: 180px;
+}
+/* header 倒數 */
+.header_lastTime {
+  float: right;
+  width: 160px;
+  height: 100%;
+  background: url(../images/blue.jpg);
+  box-shadow: 1px 0px 5px 4px rgb(21, 18, 65) inset;
+
+  position: relative;
+}
+.header_lastTime p {
+  width: 100%;
+  font-size: 22px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-family: 'Special Elite', cursive;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header 遊戲名稱 */
+.header_gameTitle {
+  float: left;
+  width: 480px;
+  height: 100%;
+  background: url('../images/images.jpg');
+
+  position: relative;
+}
+.header_gameTitle p {
+  width: 100%;
+  font-size: 60px;
+  color: #ffecce;
+  font-family: 'Special Elite', cursive;
+  text-shadow: 1px 2px 0px #ebeaea, 2px 2px 0px #faf8f8, 3px 2px 0px #d6d5d6, 5px 2px 0px #b4b4b4, 4px 2px 0px rgb(74 72 72), 9px 0px 2px rgb(0 0 0);
+  text-shadow: -2px 0px 0px #b9aa91, -5px -2px 0px #333, -7px -2px 1px rgb(54 54 54 / 81%), -4px 1px 0px rgb(51 51 51 / 43%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header 分數 */
+.header_grade {
+  float: left;
+  width: 160px;
+  height: 100%;
+  background: url(../images/blue.jpg);
+  box-shadow: 1px 0px 5px 4px rgb(21, 18, 65) inset;
+
+  position: relative;
+}
+.header_grade p {
+  width: 100%;
+  font-size: 22px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-family: 'Special Elite', cursive;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.textNumber {
+  font-size: 80px;
+  color: aliceblue;
+}
+
+/************ main **************/
+#main {
+  width: 100%;
+  height: 270px;
+
+  background: url('../images/industrial_cut.jpg');
+  box-shadow: 1px 0px 5px 4px rgb(21, 18, 65);
+}
+/* main 按下的按鍵 */
+.main_keyPress {
+  float: left;
+  width: 240px;
+  height: 100%;
+
+  box-shadow: 1px -1px 5px 0px rgb(21 18 65);
+  position: relative;
+}
+.main_keyboard {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 5px;
+  background: url('../images/images.jpg');
+  box-shadow: 2px 0px 13px 4px #000000 inset, 0 2px 2px 4px #000000 inset, 2px 0 9px 3px #383636 inset, 0 6px 17px 1px #221e1e inset;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.main_keyPress p {
+  width: 100%;
+
+  color: rgb(219, 214, 214);
+  font-size: 45px;
+  font-weight: 900;
+
+  font-family: 'Inconsolata', monospace;
+  line-height: 100px;
+  text-shadow: 1px 1px 0px white, -1px -1px 0px #333;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+/* main 指定輸入的字串 */
+.main_text {
+  float: right;
+  width: 560px;
+  height: 100%;
+
+  box-shadow: 1px 0px 2px 2px rgb(21 18 65);
+  position: relative;
+}
+.main_text p {
+  width: 100%;
+
+  font-family: 'Special Elite', cursive;
+  font-size: 80px;
+  text-shadow: -1px -1px 3px white, 1px 1px 3px #333;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.bg {
+  text-decoration-line: underline;
+}
+
+/************** footer *************/
+#footer {
+  width: 100%;
+  height: 150px;
+  background: url('../images/images.jpg');
+  box-shadow: 1px 0px 5px 4px rgb(21, 18, 65) inset;
+
+  position: relative;
+}
+
+#btn {
+  width: 140px;
+  height: 70px;
+  border-radius: 10%;
+  border: none;
+  outline: none;
+
+  color: white;
+  font-size: 20px;
+
+  background: linear-gradient(rgb(141 15 15), rgb(180 49 49), rgb(167 31 31));
+  background: #9e193a;
+  box-shadow: 10px -3px 7px -5px #fcf6f6 inset, 0 9px 3px -3px #bcb3b3 inset, 0 -12px 3px -6px #d4cbcb inset, 1px 0 2px 9px #f8f8f8 inset;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#btn:active{
+  width: 130px;
+  height: 60px;
+  font-size: 1rem;
+
+  background: #7a102a;
+}

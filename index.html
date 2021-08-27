@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>作業_打地鼠</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <!-- 分數顯示 -->
+            <div class="header_grade middle">
+                <p>Score: <br><br><span id="text_score" class="textNumber">0</span></p>
+            </div>
+            <!-- 遊戲名稱 -->
+            <div class="header_gameTitle middle">
+                <p>Typing Game</p>
+            </div>
+            <!-- 剩餘時間 -->
+            <div class="header_lastTime middle">
+                <p>Time Left: <br><br><span id="text_countdown" class="textNumber">60</span></p>
+            </div>
+        </div>
+
+        <div id="main">
+            <!-- 鍵盤輸入的文字 -->
+            <div class="main_keyPress middle">
+                <div class="main_keyboard">
+                    <p id="keyPress"></p>
+                </div>
+            </div>
+            <!-- 指定輸入的文字 -->
+            <div class="main_text middle">
+                <p id="randomWord"></p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <!-- 開始按鈕/暫停按鈕 -->
+            <div class="footer_btn middle">
+                <input type="button" value="START" id="btn">
+            </div>
+        </div>
+    </div>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
